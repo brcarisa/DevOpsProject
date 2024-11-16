@@ -13,7 +13,7 @@ pipeline {
             steps{
                 echo DOCKER_IMAGE
                 println("ANTYHYPE")
-                sh "curl -vvv google.com"
+                sh "docker"
             }
         }
 
