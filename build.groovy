@@ -13,7 +13,7 @@ pipeline {
             steps{
                 echo DOCKER_IMAGE
                 println("ANTYHYPE")
-                sh "curl -vvv localhost:8080 --user Tatarskiy:1136d145274fd800b487789b5f82ab356a"
+                sh "curl -vvv google.com"
             }
         }
 
