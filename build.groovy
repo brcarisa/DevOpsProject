@@ -13,6 +13,7 @@ pipeline {
             steps{
                 echo DOCKER_IMAGE
                 println("ANTYHYPE")
+                sh "curl -vvv localhost:8080"
             }
         }
 
