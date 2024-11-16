@@ -9,12 +9,14 @@ pipeline {
     }
 
     stages {
-        stage{
+        stage ('Init'){
             echo DOCKER_IMAGE
             println("ANTYHYPE")
         }
 
-        stage
+        stage ('Remove'){
+            cleanWs()
+        }
     }
 
     post {
