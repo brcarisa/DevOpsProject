@@ -10,12 +10,16 @@ pipeline {
 
     stages {
         stage ('Init'){
-            echo DOCKER_IMAGE
-            println("ANTYHYPE")
+            steps{
+                echo DOCKER_IMAGE
+                println("ANTYHYPE")
+            }
         }
 
         stage ('Remove'){
-            cleanWs()
+            steps{
+                cleanWs()
+            }
         }
     }
 
